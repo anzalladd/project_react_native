@@ -21,10 +21,8 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-      <Image
-       style={styles.gambar}
-       source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
-     />
+        <Image style={styles.gambar} 
+        source={require('./content/gambar/boruto.jpeg')} />
         <Text style={styles.welcome}>Helloo</Text>
         <Text style={styles.instructions}>Nama  : Anzalla Dzikri Dhamara</Text>
         <Text style={styles.instructions}>No    : 10</Text>
