@@ -9,24 +9,18 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Image style={styles.gambar} 
-        source={require('./content/gambar/boruto.jpeg')} />
+        source={require('./content/gambar/fotoprofil.jpg')} />
         <Text style={styles.welcome}>Helloo</Text>
-        <Text style={styles.instructions}>Nama  : Anzalla Dzikri Dhamara</Text>
-        <Text style={styles.instructions}>No    : 10</Text>
-        <Text style={styles.instructions}>Kelas : XI RPL 2</Text>
+        <Text style={styles.welcome}>Introducing</Text>
+        <Text style={styles.instructions1}>Nama  : Anzalla Dzikri Dhamara</Text>
+        <Text style={styles.instructions2}>No    : 10</Text>
+        <Text style={styles.instructions3}>Kelas : XI RPL 2</Text>
 
       </View>
     );
@@ -44,22 +38,36 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 25,
     textAlign: 'center',
-    margin: 10,
+    marginBottom:0,
     color: 'white',
     fontFamily: 'Roboto-Italic',
 
   },
-  instructions: {
+  instructions1: {
     textAlign: 'center',
     color: 'white',
-    marginBottom: 5,
+    marginTop:30,
+    fontSize: 20,
+    fontFamily: 'Roboto-Regular',
+  },
+  instructions2: {
+    textAlign: 'center',
+    color: 'white',
+    
+    fontSize: 20,
+    fontFamily: 'Roboto-Regular',
+  },
+  instructions3: {
+    textAlign: 'center',
+    color: 'white',
+    
     fontSize: 20,
     fontFamily: 'Roboto-Regular',
   },
 
   gambar:{
-    width: 100,
-    height: 100,
+    width: 130,
+    height: 130,
     marginBottom: 40,
 }
 });
